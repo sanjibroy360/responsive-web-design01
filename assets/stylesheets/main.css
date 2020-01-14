@@ -1,0 +1,442 @@
+/* CSS Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My CSS */
+
+
+
+/* My Reset */
+
+*,*:before,*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Hover */
+
+.nav-links a:hover {
+    color: rgb(85,181,102);
+}
+
+.contact input[type="text"]:hover,
+.contact input[type="email"]:hover, .contact textarea:hover {
+    border-bottom: 2px solid rgb(85,181,102);    
+}
+
+button:hover {
+    background-color: rgb(85,181,102);
+    box-shadow: 0px 0px 10px #fafafa;
+}
+
+.portfolio image:hover {
+    box-shadow: 0px 0px 20px #000;
+    zoom: 1.04;
+}
+
+/* Common Properties */
+
+body {
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.parent-container {
+    max-width: 90vw;
+    margin: 0 auto;
+}
+
+.child-container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.gap {
+    padding: 5% 0;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.btn {
+    padding: 6px 16px;
+    font-weight: 600;
+    display: flex;
+    border-width:1.5px;
+    border-style: solid;
+    border-radius: 2px;
+}
+
+.sec-heading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgb(39,55,71);
+    padding: 4% 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+button {
+    outline: 0;
+}
+/* Header */
+
+.header {
+    width: 100vw;
+    padding-top: 15px;
+    color: rgb(223,245,225);
+}
+
+.logo {
+    width: 15%;
+}
+
+.nav-links a {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-left:2rem ;
+}
+
+.nav-links li a , .nav-links li i {
+    color: white;
+}
+
+/* Banner */
+
+header{
+    background:linear-gradient(to bottom,rgb(19,26,34),rgb(56,115,105),rgb(76,158,124));
+}
+
+.banner {
+    width: 100vw;
+}
+
+
+.banner-heading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.banner-para {
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 600;
+    padding: 4vh 0;
+    text-transform: capitalize;
+}
+
+.laptop {
+    display: none;
+    font-size: 0px;
+}
+
+/* Portfolio */
+
+.image {
+    padding: 5%;
+    margin: 5% 0;
+}
+
+.image img {
+    border-radius: 50%;
+    width: 80%;
+    height: 36vh;
+}
+
+.home {
+    background-color: rgb(186,76,99);
+}
+
+.cake {
+    background-color: rgb(73,163,182);
+}
+
+.tent {
+    background-color: rgb(18,15,15);
+}
+
+.game {
+    background-color: rgb(47,130,192);
+}
+
+.vault {
+    background-color: rgb(27,71,181);
+}
+
+.sub {
+    background-color: rgb(204,178,162);
+}
+
+.portfolio-flex {
+    display: flex;
+    
+}
+
+/* About */
+
+.about,.about .sec-heading {
+    background-color: rgb(68,142,117);
+    color: rgb(202,230,211);
+}
+
+.para {
+    padding: 5% 0;
+}
+
+.about-btn {
+    color: rgb(39,39,39);
+    border-color: rgb(39,39,39);
+    margin: 0 auto;
+}
+
+/* Contact */
+
+.form input[type="text"],
+.form input[type="number"],
+.form input[type="email"],
+.form textarea {
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    border-width: 0;
+    border-bottom: 1px solid rgb(175,189,205);
+    margin: 2% 0;
+    outline: 0;
+    font-size: 18px;
+}
+
+.form .form-btn {
+    color: #fff;
+    background-color: rgb(50,108,93);
+    border-color: rgb(50,108,93);
+}
+
+/* Map */
+
+.map {
+    background-color: rgb(189,199,210);
+}
+
+
+.table table {
+    border-width:0;
+    width: 100%;
+    text-align: left;
+}
+
+.table thead {
+    background-color: rgb(30,38,57);
+    color: rgb(32,85,113);
+    font-size: 18px;
+}
+
+td:first-child {
+    color: rgb(182,84,105);
+}
+
+.table tr:nth-child(even) {
+    background-color: rgb(43,51,69);
+}
+
+.table tr:nth-child(odd) {
+    background-color:rgb(50,60,80);
+}
+
+/* Address */
+.address { 
+    background-color: #2c3e50;
+    color: #dff5e1;
+}
+.social-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.social-flex i {
+    color: #dff5e1;
+    margin: 0 1px;
+}
+
+.address-heading {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.address .para , .address-heading {
+    text-align: center;
+}
+
+/* Footer */
+
+.footer {
+    background-color: rgb(25,36,45);
+    padding: 2% 0;
+}
+
+.copy {
+    font-size: 14px;
+    color: rgb(166,184,173);
+    text-align: center;
+}
+
+
+/* Media Querey */
+
+@media all and (min-width:1000px) {
+    .mob {
+        display: none;
+        font-size: 0;
+    }
+
+    .banner {
+        height: auto;
+    }
+
+    .laptop {
+        display: flex;
+        font-size: 1rem;
+    }
+
+    .map .laptop {
+        margin: 0 auto;
+    }
+
+    .child-container,.parent-container {
+        max-width: 1000px;
+    }
+
+    .banner-heading {
+        font-size:73.9px;
+        word-spacing: 20px;
+    }
+
+    .banner-para {
+        font-size: 28px;
+    }
+
+    .gap {
+        padding: 2% 0;
+    }
+
+    /* Portfolio */
+
+    .sec-heading {
+        font-size: 40px;
+        text-transform: uppercase;
+    }
+
+    .portfolio .portfolio-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .image {
+        flex-basis: 30%;
+        margin: 1.66%;
+    }
+
+    /* About */
+
+    .about-para-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-para {
+        flex-basis: 48%;
+    }
+
+    .about .child-container, .contact .child-container,
+    .address .child-container {
+        width: 60%;
+    }
+
+    .btn {
+        padding: 15px 50px;
+        border-radius: 3px;
+    }
+
+    /* Address */
+
+    .flex {
+        display: flex;
+    }
+
+    .address li {
+        margin: 0 20px;
+        margin-top: 30px;
+    }
+
+    
+
+    .address-box {
+        flex-basis: 30%;
+    }
+    
+}
+
+
+
